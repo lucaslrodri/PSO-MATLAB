@@ -11,6 +11,11 @@ Here some characteristics of my algorithm:
 - You can **adapt my algorithm to any Simulink Simulation** , to do that, just modify `dfig.slx` and `fitness.m`.
 - You can **change the optimization algorithm** to any other meta-heuristic or evolutionary algorithm, like Genetic Algorithm, by replacing or modifying `pso.m`.
 
+Here a video of the algorithm working:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zsU5F3VRXoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 For more details, or if you want to use my algorithm don't forget to cite my paper (It is open access):
 
 > **L. L. Rodrigues, J. S. Solís-Chaves, O. A. C. Vilcanqui and A. J. S. Filho, "Predictive Incremental Vector Control for DFIG With Weighted-Dynamic Objective Constraint-Handling Method-PSO Weighting Matrices Design," in *IEEE Access*, vol. 8, pp. 114112-114122, 2020, doi: 10.1109/ACCESS.2020.3003285.**
