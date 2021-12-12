@@ -4,16 +4,11 @@ I created this algorithm to optimize a Model Predictive Control (MPC) parameters
 Here some characteristics of my algorithm:
 
 - The MPC and DFIG model are implemented in a Simulink Simulation (`dfig.slx`);
-
 - The MPC parameters to be optimized are the weighing matrices;
-
 - It uses a variant of Particle Swarm Optimization (PSO) algorithm, called wDOCHM-PSO (It supports constraints and adaptive inertia);
 - You can **adapt my algorithm to any Simulink Simulation** , to do that, just modify `dfig.slx` and `fitness.m`.
 - You can **change the optimization algorithm** to any other meta-heuristic or evolutionary algorithm, like Genetic Algorithm, by replacing or modifying `pso.m`.
-
-Here a video of the algorithm working:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zsU5F3VRXoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- A video of the algorithm working: https://www.youtube.com/watch?v=zsU5F3VRXoU
 
 
 For more details, or if you want to use my algorithm don't forget to cite my paper (It is open access):
