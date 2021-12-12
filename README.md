@@ -1,3 +1,4 @@
+# Introduction
 I created this algorithm to optimize a Model Predictive Control (MPC) parameters, applied to Doubly Fed Induction Generator (DFIG).
 
 Here some characteristics of my algorithm:
