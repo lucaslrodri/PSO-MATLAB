@@ -1,5 +1,3 @@
-# Introduction
-
 I created this algorithm to optimize a Model Predictive Control (MPC) parameters, applied to Doubly Fed Induction Generator (DFIG).
 
 Here some characteristics of my algorithm:
@@ -12,9 +10,16 @@ Here some characteristics of my algorithm:
 - You can **adapt my algorithm to any Simulink Simulation** , to do that, just modify `dfig.slx` and `fitness.m`.
 - You can **change the optimization algorithm** to any other meta-heuristic or evolutionary algorithm, like Genetic Algorithm, by replacing or modifying `pso.m`.
 
-**TL; DR:** This algorithm uses PSO to optimize a Simulink Simulation parameters. If you want, you can use it to any simulink simulation, you just need to modify or replace `dfig.slx`
+For more details, or if you want to use my algorithm don't forget to cite my paper (It is open access):
+
+> **L. L. Rodrigues, J. S. Solís-Chaves, O. A. C. Vilcanqui and A. J. S. Filho, "Predictive Incremental Vector Control for DFIG With Weighted-Dynamic Objective Constraint-Handling Method-PSO Weighting Matrices Design," in *IEEE Access*, vol. 8, pp. 114112-114122, 2020, doi: 10.1109/ACCESS.2020.3003285.**
+> Abstract: This paper proposes a Particle Swarm Optimization (PSO) based method, the Weighted-Dynamic-Objective Constraint-Handling PSO Method (WDOCHM-PSO). This was used to design the weighting matrices of an incremental Model-Based Predictive Controller (MBPC) for a Doubly Fed Induction Generator (DFIG) applied in a small-scale wind energy system. In contrast to the original PSO, the proposed method has an inner mechanism for dealing with constraints and an adaptive search factor. Additionally, the proposed incremental MPBC implementation does not need the flux information, since the intrinsic integral action rejects the constant flux disturbance. Finally, experimental results show that the proposed controller with the new constraint handling design method is nearly two times faster (In terms of settling time) than other formulations reported in the literature.
+> URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9121987&isnumber=8948470
 
 **For more details** see my paper: https://ieeexplore.ieee.org/document/9121987
+
+
+**TL; DR:** This algorithm uses PSO to optimize a Simulink Simulation parameters. If you want, you can use it to any simulink simulation, you just need to modify or replace `dfig.slx`
 
 # Instructions
 ## Testing
@@ -63,11 +68,3 @@ N  = 300; % Generations
 cg = 1.5; % Global weighing
 cp = 1.5; % Personal weighting
 ```
-
-# Citation
-
-If you want to use my algorithm don't forget to cite my paper (It is open access):
-
-> **L. L. Rodrigues, J. S. Solís-Chaves, O. A. C. Vilcanqui and A. J. S. Filho, "Predictive Incremental Vector Control for DFIG With Weighted-Dynamic Objective Constraint-Handling Method-PSO Weighting Matrices Design," in *IEEE Access*, vol. 8, pp. 114112-114122, 2020, doi: 10.1109/ACCESS.2020.3003285.**
-> Abstract: This paper proposes a Particle Swarm Optimization (PSO) based method, the Weighted-Dynamic-Objective Constraint-Handling PSO Method (WDOCHM-PSO). This was used to design the weighting matrices of an incremental Model-Based Predictive Controller (MBPC) for a Doubly Fed Induction Generator (DFIG) applied in a small-scale wind energy system. In contrast to the original PSO, the proposed method has an inner mechanism for dealing with constraints and an adaptive search factor. Additionally, the proposed incremental MPBC implementation does not need the flux information, since the intrinsic integral action rejects the constant flux disturbance. Finally, experimental results show that the proposed controller with the new constraint handling design method is nearly two times faster (In terms of settling time) than other formulations reported in the literature.
-> URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9121987&isnumber=8948470
